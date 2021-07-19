@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+nav a {
+  padding: 0.8em;
+}
+
+.container {
+  border-top: 1px solid lightgray;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+#pages {
+  padding: 3em 1.5em;
+}
+
+#pages li {
+  padding: 0.4em;
+}
+
+#pages li:hover {
+  color: gray;
+}
+
+#pages p,
+h1,
+h2 {
+  padding-top: 0.5em;
+  line-height: 1.5em;
+}
