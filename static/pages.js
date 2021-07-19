@@ -22,7 +22,7 @@ function onRouteChange() {
 
 async function loadContent(uri) {
   let content = "";
-  let prefix = "rezepte";
+  let prefix = "/Rezepte/rezepte";
   if (uri == "index") {
     prefix = "";
   }
