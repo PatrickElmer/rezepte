@@ -1,5 +1,3 @@
-// Based on https://youtu.be/1g1fICJR8YQ
-
 // Initialization
 
 window.addEventListener("hashchange", onRouteChange);
@@ -28,13 +26,13 @@ async function loadContent(uri) {
   if (uri == "index") {
     prefix = "";
   }
-  let response = await fetch(`${prefix}/${uri}.md`);
+  let response = await fetch(`Rezepte/${prefix}/${uri}.md`);
   if (response.ok) {
     // Markdown file found
     content = await response.text();
     content = markdown(content);
   } else {
-    response = await fetch(`${prefix}/${uri}.html`);
+    response = await fetch(`Rezepte/${prefix}/${uri}.html`);
     if (response.ok) {
       content = await response.text();
     } else {
