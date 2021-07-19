@@ -24,7 +24,7 @@ async function loadContent(uri) {
   let content = "";
   let prefix = "/Rezepte/rezepte";
   if (uri == "index") {
-    prefix = "";
+    prefix = "/Rezepte";
   }
   let response = await fetch(`${prefix}/${uri}.md`);
   if (response.ok) {
